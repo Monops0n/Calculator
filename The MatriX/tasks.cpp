@@ -8,20 +8,20 @@ void free(float** A, int str, int stl) {
 	free(A);
 }
 void inputMat(float** A, int str, int stl) {
-	printf("Ввод матрицы\n");
+	printf("Р’РІРѕРґ РјР°С‚СЂРёС†С‹\n");
 	for (int i = 0; i < str; i++)
 	{
 		A[i] = (float*)malloc(stl * sizeof(float));
 		for (int j = 0; j < stl; j++)
 		{
-			printf("Ввод элемента [%d][%d]: ", i, j);
+			printf("Р’РІРѕРґ СЌР»РµРјРµРЅС‚Р° [%d][%d]: ", i, j);
 			scanf("%f", &A[i][j]);
 		}
 	}
 }
 void outputMat(float** A, int str, int stl)
 {
-	printf("Полученная матрица:\n");
+	printf("РџРѕР»СѓС‡РµРЅРЅР°СЏ РјР°С‚СЂРёС†Р°:\n");
 	for (int i = 0; i < str; i++)
 	{
 		for (int j = 0; j < stl; j++)
