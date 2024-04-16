@@ -8,20 +8,20 @@ int main() {
 	do {
 		printf("\t+----------------------------------------------------------------------------------+\n");
 		printf("\t|                                                                                  |\n");
-		printf("\t|   Матричный калькулятор, выбор функции                                           |\n");
+		printf("\t|   РњР°С‚СЂРёС‡РЅС‹Р№ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ, РІС‹Р±РѕСЂ С„СѓРЅРєС†РёРё                                           |\n");
 		printf("\t|                                                                                  |\n");
 		printf("\t+----------------------------------------------------------------------------------+\n");
 		printf("\t|                                                                                  |\n");
-		printf("\t|    0 - Выход                                                                     |\n");
-		printf("\t|    1 - Сложение матриц.                                                          |\n");
-		printf("\t|    2 - Вычитание матриц.                                                         |\n");
-		printf("\t|    3 - Умножение матриц.                                                         |\n");
-		printf("\t|    4 - Умножение матрицы на число.                                               |\n");
-		printf("\t|    5 - Сложение матрицы с числом.                                                |\n");
-		printf("\t|    6 - Вычитание матрицы с числом.                                               |\n");
-		printf("\t|    7 - Транспонирование матрицы.                                                 |\n");
-		printf("\t|    8 - Нахождение обратной матрицы.                                              |\n");
-		printf("\t|    9 - Нахождение определителя                                                   |\n");
+		printf("\t|    0 - Р’С‹С…РѕРґ                                                                     |\n");
+		printf("\t|    1 - РЎР»РѕР¶РµРЅРёРµ РјР°С‚СЂРёС†.                                                          |\n");
+		printf("\t|    2 - Р’С‹С‡РёС‚Р°РЅРёРµ РјР°С‚СЂРёС†.                                                         |\n");
+		printf("\t|    3 - РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†.                                                         |\n");
+		printf("\t|    4 - РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ РЅР° С‡РёСЃР»Рѕ.                                               |\n");
+		printf("\t|    5 - РЎР»РѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ СЃ С‡РёСЃР»РѕРј.                                                |\n");
+		printf("\t|    6 - Р’С‹С‡РёС‚Р°РЅРёРµ РјР°С‚СЂРёС†С‹ СЃ С‡РёСЃР»РѕРј.                                               |\n");
+		printf("\t|    7 - РўСЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёРµ РјР°С‚СЂРёС†С‹.                                                 |\n");
+		printf("\t|    8 - РќР°С…РѕР¶РґРµРЅРёРµ РѕР±СЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹.                                              |\n");
+		printf("\t|    9 - РќР°С…РѕР¶РґРµРЅРёРµ РѕРїСЂРµРґРµР»РёС‚РµР»СЏ                                                   |\n");
 		printf("\t|                                                                                  |\n");
 		printf("\t+----------------------------------------------------------------------------------+\n");
 		scanf("%d", &choice);
@@ -35,29 +35,29 @@ int main() {
 			int stlA, strA, stlB, strB;
 			do {
 				do {
-					printf("Ввод количества строк первой матрицы "); scanf("%d", &strA);
-					if (strA < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &strA);
+					if (strA < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (strA < 1);
 				do {
-					printf("Ввод количества столбцов первой матрицы "); scanf("%d", &stlA);
-					if (stlA < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stlA);
+					if (stlA < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stlA < 1);
 				do {
-					printf("Ввод количества строк второй матрицы "); scanf("%d", &strB);
-					if (strB < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &strB);
+					if (strB < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (strB < 1);
 				do {
-					printf("Ввод количества столбцов второй матрицы "); scanf("%d", &stlB);
-					if (stlB < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stlB);
+					if (stlB < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stlB < 1);
 				if (stlA != stlB || strA != strB)
-					printf("Ошибка! Матрицы должны быть одного размера\n");
+					printf("РћС€РёР±РєР°! РњР°С‚СЂРёС†С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕРґРЅРѕРіРѕ СЂР°Р·РјРµСЂР°\n");
 			} while (stlA != stlB || strA != strB);
 			A = (float**)malloc(strA * sizeof(float*));
 			B = (float**)malloc(strB * sizeof(float*));
-			printf("Первая матрица:\n");
+			printf("РџРµСЂРІР°СЏ РјР°С‚СЂРёС†Р°:\n");
 			inputMat(A, strA, stlA);
-			printf("Вторая матрица:\n");
+			printf("Р’С‚РѕСЂР°СЏ РјР°С‚СЂРёС†Р°:\n");
 			inputMat(B, strB, stlB);
 			plusMat(A,B,strA,stlA);
 			outputMat(A,strA,stlA);
@@ -72,29 +72,29 @@ int main() {
 			int stlA, strA, stlB, strB;
 			do {
 				do {
-					printf("Ввод количества строк первой матрицы "); scanf("%d", &strA);
-					if (strA < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &strA);
+					if (strA < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (strA < 1);
 				do {
-					printf("Ввод количества столбцов первой матрицы "); scanf("%d", &stlA);
-					if (stlA < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stlA);
+					if (stlA < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stlA < 1);
 				do {
-					printf("Ввод количества строк второй матрицы "); scanf("%d", &strB);
-					if (strB < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &strB);
+					if (strB < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (strB < 1);
 				do {
-					printf("Ввод количества столбцов второй матрицы "); scanf("%d", &stlB);
-					if (stlB < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stlB);
+					if (stlB < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stlB < 1);
 				if (stlA != stlB || strA != strB)
-					printf("Ошибка! Матрицы должны быть одного размера\n");
+					printf("РћС€РёР±РєР°! РњР°С‚СЂРёС†С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕРґРЅРѕРіРѕ СЂР°Р·РјРµСЂР°\n");
 			} while (stlA != stlB || strA != strB);
 			A = (float**)malloc(strA * sizeof(float*));
 			B = (float**)malloc(strB * sizeof(float*));
-			printf("Первая матрица:\n");
+			printf("РџРµСЂРІР°СЏ РјР°С‚СЂРёС†Р°:\n");
 			inputMat(A, strA, stlA);
-			printf("Вторая матрица:\n");
+			printf("Р’С‚РѕСЂР°СЏ РјР°С‚СЂРёС†Р°:\n");
 			inputMat(B, strB, stlB);
 			minusMat(A, B, strA, stlA);
 			outputMat(A, strA, stlA);
@@ -110,30 +110,30 @@ int main() {
 			int stlA, strA, stlB, strB;
 			do {
 				do {
-					printf("Ввод количества строк первой матрицы "); scanf("%d", &strA);
-					if (strA < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &strA);
+					if (strA < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (strA < 1);
 				do {
-					printf("Ввод количества столбцов первой матрицы "); scanf("%d", &stlA);
-					if (stlA < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stlA);
+					if (stlA < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stlA < 1);
 				do {
-					printf("Ввод количества строк второй матрицы "); scanf("%d", &strB);
-					if (strB < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &strB);
+					if (strB < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (strB < 1);
 				do {
-					printf("Ввод количества столбцов второй матрицы "); scanf("%d", &stlB);
-					if (stlB < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stlB);
+					if (stlB < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stlB < 1);
 				if (stlA != strB)
-					printf("Ошибка! Число столбцов первой матрицы должно быть равно числу строк второй матрицы\n");
+					printf("РћС€РёР±РєР°! Р§РёСЃР»Рѕ СЃС‚РѕР»Р±С†РѕРІ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ СЂР°РІРЅРѕ С‡РёСЃР»Сѓ СЃС‚СЂРѕРє РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹\n");
 			} while (stlA != strB);
 			A = (float**)malloc(strA * sizeof(float*));
 			B = (float**)malloc(strB * sizeof(float*));
 			result = (float**)malloc(strA * sizeof(float*));
-			printf("Первая матрица:\n");
+			printf("РџРµСЂРІР°СЏ РјР°С‚СЂРёС†Р°:\n");
 			inputMat(A, strA, stlA);
-			printf("Вторая матрица:\n");
+			printf("Р’С‚РѕСЂР°СЏ РјР°С‚СЂРёС†Р°:\n");
 			inputMat(B, strB, stlB);
 			starMat(A, B, result, strA, stlA, stlB);
 			outputMat(result, strA, stlB);
@@ -147,16 +147,16 @@ int main() {
 			float** A;
 			int stl, str;
 			do {
-				printf("Ввод количества строк матрицы "); scanf("%d", &str);
-				if (str < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ "); scanf("%d", &str);
+				if (str < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (str < 1);
 			do {
-				printf("Ввод количества столбцов матрицы "); scanf("%d", &stl);
-				if (stl < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stl);
+				if (stl < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (stl < 1);
 			A = (float**)malloc(str * sizeof(float*));
 			inputMat(A, str, stl);
-			printf("Ввод числа "); scanf("%f", &num);
+			printf("Р’РІРѕРґ С‡РёСЃР»Р° "); scanf("%f", &num);
 			starNum(A, str, stl, num);
 			outputMat(A, str, stl);
 			free(A, str, stl);
@@ -168,16 +168,16 @@ int main() {
 			float **A;
 			int stl, str;
 			do {
-				printf("Ввод количества строк матрицы "); scanf("%d", &str);
-				if (str < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ "); scanf("%d", &str);
+				if (str < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (str < 1);
 			do {
-				printf("Ввод количества столбцов матрицы "); scanf("%d", &stl);
-				if (stl < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stl);
+				if (stl < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (stl < 1);
 			A = (float**)malloc(str * sizeof(float*));
 			inputMat(A, str, stl);
-			printf("Ввод числа "); scanf("%f", &num);
+			printf("Р’РІРѕРґ С‡РёСЃР»Р° "); scanf("%f", &num);
 			plusNum(A, str, stl, num);
 			outputMat(A, str, stl);
 			free(A, str, stl);
@@ -188,16 +188,16 @@ int main() {
 			float** A;
 			int stl, str;
 			do {
-				printf("Ввод количества строк матрицы "); scanf("%d", &str);
-				if (str < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ "); scanf("%d", &str);
+				if (str < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (str < 1);
 			do {
-				printf("Ввод количества столбцов матрицы "); scanf("%d", &stl);
-				if (stl < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stl);
+				if (stl < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (stl < 1);
 			A = (float**)malloc(str * sizeof(float*));
 			inputMat(A, str, stl);
-			printf("Ввод числа "); scanf("%f", &num);
+			printf("Р’РІРѕРґ С‡РёСЃР»Р° "); scanf("%f", &num);
 			minusNum(A, str, stl, num);
 			outputMat(A, str, stl);
 			free(A, str, stl);
@@ -209,12 +209,12 @@ int main() {
 			float** result;
 			int stl, str;
 			do {
-				printf("Ввод количества строк матрицы "); scanf("%d", &str);
-				if (str < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ "); scanf("%d", &str);
+				if (str < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (str < 1);
 			do {
-				printf("Ввод количества столбцов матрицы "); scanf("%d", &stl);
-				if (stl < 1) printf("Ошибка ввода\n");
+				printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stl);
+				if (stl < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 			} while (stl < 1);
 			A = (float**)malloc(str * sizeof(float*));
 			result = (float**)malloc(stl * sizeof(float*));
@@ -233,15 +233,15 @@ int main() {
 			int stl, str;
 			do {
 				do {
-					printf("Ввод количества строк матрицы "); scanf("%d", &str);
-					if (str < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ "); scanf("%d", &str);
+					if (str < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (str < 1);
 				do {
-					printf("Ввод количества столбцов матрицы "); scanf("%d", &stl);
-					if (stl < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stl);
+					if (stl < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stl < 1);
 				if (stl != str)
-					printf("Ошибка! Матрица должна быть квадратной\n");
+					printf("РћС€РёР±РєР°! РњР°С‚СЂРёС†Р° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєРІР°РґСЂР°С‚РЅРѕР№\n");
 			} while (stl != str);
 			A = (float**)malloc(str * sizeof(float*));
 			result = (float**)malloc(str * sizeof(float*));
@@ -249,7 +249,7 @@ int main() {
 			det = deterMat(A, str);
 			if (det == 0)
 			{
-				printf("Матрица не имеет обратную матрицу, так как она не вырождена(ее определитель равен 0)\n");
+				printf("РњР°С‚СЂРёС†Р° РЅРµ РёРјРµРµС‚ РѕР±СЂР°С‚РЅСѓСЋ РјР°С‚СЂРёС†Сѓ, С‚Р°Рє РєР°Рє РѕРЅР° РЅРµ РІС‹СЂРѕР¶РґРµРЅР°(РµРµ РѕРїСЂРµРґРµР»РёС‚РµР»СЊ СЂР°РІРµРЅ 0)\n");
 				break;
 			}
 			algMat(A,result, str);
@@ -267,15 +267,15 @@ int main() {
 			int stl, str;
 			do {
 				do {
-					printf("Ввод количества строк матрицы "); scanf("%d", &str);
-					if (str < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ "); scanf("%d", &str);
+					if (str < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (str < 1);
 				do {
-					printf("Ввод количества столбцов матрицы "); scanf("%d", &stl);
-					if (stl < 1) printf("Ошибка ввода\n");
+					printf("Р’РІРѕРґ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ "); scanf("%d", &stl);
+					if (stl < 1) printf("РћС€РёР±РєР° РІРІРѕРґР°\n");
 				} while (stl < 1);
 				if (stl != str)
-					printf("Ошибка! Матрица должна быть квадратной\n");
+					printf("РћС€РёР±РєР°! РњР°С‚СЂРёС†Р° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєРІР°РґСЂР°С‚РЅРѕР№\n");
 			} while (stl != str);
 			A = (float**)malloc(str * sizeof(float*));
 			inputMat(A, str, stl);
@@ -284,7 +284,7 @@ int main() {
 			free(A, str, stl);
 			break;
 		}
-		default:printf("Ошибка ввода\n"); break;
+		default:printf("РћС€РёР±РєР° РІРІРѕРґР°\n"); break;
 		}
 	} while (choice != 0);
 }
