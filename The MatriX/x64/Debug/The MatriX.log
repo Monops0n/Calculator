@@ -1,0 +1,123 @@
+﻿  мейн.cpp
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(59,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(61,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(62,4): error C3861: plusMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(63,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(64,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(64,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(65,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(65,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(96,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(98,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(99,4): error C3861: minusMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(100,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(101,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(101,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(102,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(102,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(135,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(137,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(138,4): error C3861: starMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(139,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(140,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(140,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(141,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(141,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(142,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(142,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(158,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(160,4): error C3861: starNum: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(161,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(162,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(162,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(179,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(181,4): error C3861: plusNum: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(182,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(183,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(183,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(199,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(201,4): error C3861: minusNum: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(202,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(203,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(203,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(221,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(222,4): error C3861: transMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(223,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(224,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(224,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(225,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(225,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(248,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(249,10): error C3861: deterMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(255,4): error C3861: algMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(256,4): error C3861: transMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(257,4): error C3861: starNum: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(258,4): error C3861: outputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(259,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(259,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(260,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(260,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(281,4): error C3861: inputMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(282,13): error C3861: deterMat: идентификатор не найден
+C:\Users\Костя\source\repos\The MatriX\мейн.cpp(284,4): error C2660: free: функция не принимает 3 аргументов
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_malloc.h(89,14):
+   см. объявление "free"
+  C:\Users\Костя\source\repos\The MatriX\мейн.cpp(284,4):
+  при попытке сопоставить список аргументов "(float **, int, int)"
+  
