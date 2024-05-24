@@ -192,11 +192,11 @@ double evaluatePolynomials(Polynomial plnmial, double x)
 void printPolynomial(Polynomial plnmial) {
 	if (plnmial.kef[0] == 0 && plnmial.degree == 0)
 	{
-		printf("0");
+		printf_s("0");
 		return;
 	}
 
-	printf("%.2lfx^%d", plnmial.kef[plnmial.degree], plnmial.degree);
+	printf_s("%.2lfx^%d", plnmial.kef[plnmial.degree], plnmial.degree);
 
 	for (int i = plnmial.degree - 1; i >= 0; i--)
 	{
@@ -207,16 +207,16 @@ void printPolynomial(Polynomial plnmial) {
 		}
 		else if (i != 0)
 		{
-			printf(" + ");
-			printf("%.2lfx^%d", plnmial.kef[i], i);
+			printf_s(" + ");
+			printf_s("%.2lfx^%d", plnmial.kef[i], i);
 		}
 		else
 		{
-			printf(" + ");
-			printf("%.2lf", plnmial.kef[i]);
+			printf_s(" + ");
+			printf_s("%.2lf", plnmial.kef[i]);
 		}
 	}
-	printf("\n");
+	printf_s("\n");
 }
 
 int firstTask()
@@ -226,65 +226,65 @@ int firstTask()
 	int degree;
 	double x, value, value2;
 
-	printf("Введите максимальную степень делимого(степень должна быть целая и положительная): ");
+	printf_s("Введите максимальную степень делимого(степень должна быть целая и положительная): ");
 	scanf_s("%d", &degree);
 	while (degree < 0)
 	{
-		printf("Пожалуйста, введите корректные значения, описанные выше: ");
+		printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 		scanf_s("%d", &degree);
 	}
 	plnmial1.degree = degree;
-	printf("Введите коэффициенты для делимого:\n");
+	printf_s("Введите коэффициенты для делимого:\n");
 	for (int i = degree; i >= 0; i--) {
-		printf("Коэффициент для x степени %d: ", i);
+		printf_s("Коэффициент для x степени %d: ", i);
 		scanf_s("%lf", &plnmial1.kef[i]);
 	}
-	printf("Введите максимальную степень делителя (степень должна быть целой и положительной): ");
+	printf_s("Введите максимальную степень делителя (степень должна быть целой и положительной): ");
 	scanf_s("%d", &degree);
 	while (degree < 0)
 	{
-		printf("Пожалуйста, введите корректные значения, описанные выше: ");
+		printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 		scanf_s("%d", &degree);
 	}
 	plnmial2.degree = degree;
-	printf("Введите коэффициенты для делителя:\n");
+	printf_s("Введите коэффициенты для делителя:\n");
 	for (int i = degree; i >= 0; i--) {
-		printf("Коэффициент для x степени %d: ", i);
+		printf_s("Коэффициент для x степени %d: ", i);
 		scanf_s("%lf", &plnmial2.kef[i]);
 	}
 	if (plnmial2.kef[plnmial2.degree] == 0)
 	{
-		printf("Деление на ноль - нельзя\n");
+		printf_s("Деление на ноль - нельзя\n");
 		return 0;
 	}
 
 	else if (plnmial2.degree > plnmial1.degree)
 	{
-		printf("Степень делителя больше степени делимого, невозможное действие\n");
+		printf_s("Степень делителя больше степени делимого, невозможное действие\n");
 		return 0;
 
 	}
 
 	quotient = columnDivisionOfPolynomials(plnmial1, plnmial2, &remainder);
 
-	printf("Частное от деления: ");
+	printf_s("Частное от деления: ");
 	printPolynomial(quotient);
-	printf("\n");
+	printf_s("\n");
 
-	printf("Остаток от деления: ");
+	printf_s("Остаток от деления: ");
 	printPolynomial(remainder);
-	printf("\n");
+	printf_s("\n");
 
-	printf("Введите значение x, чтобы вычислить многочлен: ");
+	printf_s("Введите значение x, чтобы вычислить многочлен: ");
 	scanf_s("%lf", &x);
 
 	value = evaluatePolynomials(quotient, x);
 
-	printf("Частное многочлена = %.2lf\n", value);
+	printf_s("Частное многочлена = %.2lf\n", value);
 
 	value2 = evaluatePolynomials(remainder, x);
 
-	printf("Остаток многочлена = %.2lf\n", value2);
+	printf_s("Остаток многочлена = %.2lf\n", value2);
 
 	Sleep(3750);
 	return 0;
@@ -297,12 +297,12 @@ int secondTask()
 	Polynomial summ = { 0 };
 	double x, value;
 
-	printf("Введите количество многочленов, которые вы хотите сложить (от 2х до 10): ");
+	printf_s("Введите количество многочленов, которые вы хотите сложить (от 2х до 10): ");
 	scanf_s("%d", &numsOfPolynomials);
 
 	while (numsOfPolynomials < 2 || numsOfPolynomials > 10)
 	{
-		printf("Пожалуйста, введите корректные значения, описанные выше: ");
+		printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 		scanf_s("%d", &numsOfPolynomials);
 	}
 
@@ -310,30 +310,30 @@ int secondTask()
 
 	for (int i = 0; i < numsOfPolynomials; i++)
 	{
-		printf("Введите степень многочлена %d (степень должна быть целая и положительная): ", i + 1);
+		printf_s("Введите степень многочлена %d (степень должна быть целая и положительная): ", i + 1);
 		scanf_s("%d", &polynomials[i].degree);
 		while (polynomials[i].degree < 0)
 		{
-			printf("Пожалуйста, введите корректные значения, описанные выше: ");
+			printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 			scanf_s("%d", &polynomials[i].degree);
 		}
 
-		printf("Введите коэффициенты для многочлена %d: \n", i + 1);
+		printf_s("Введите коэффициенты для многочлена %d: \n", i + 1);
 		for (int j = polynomials[i].degree; j >= 0; j--)
 		{
-			printf("Коэффициент для x степени %d: ", j);
+			printf_s("Коэффициент для x степени %d: ", j);
 			scanf_s("%lf", &polynomials[i].kef[j]);
 		}
 		summ = additionOfPolynomials(summ, polynomials[i]);
 	}
 
-	printf("Результат сложения: ");
+	printf_s("Результат сложения: ");
 	printPolynomial(summ);
 
-	printf("Введите значение x, чтобы найти сумму сложения: ");
+	printf_s("Введите значение x, чтобы найти сумму сложения: ");
 	scanf_s("%lf", &x);
 	value = evaluatePolynomials(summ, x);
-	printf("Сумма многочленов = %.2lf\n", value);
+	printf_s("Сумма многочленов = %.2lf\n", value);
 
 	Sleep(3750);
 	return 0;
@@ -346,12 +346,12 @@ int thirdTask()
 	Polynomial quot = { 0 };
 	double x, value;
 
-	printf("Введите количество многочленов, которые вы хотите вычесть (от 2х до 10): ");
+	printf_s("Введите количество многочленов, которые вы хотите вычесть (от 2х до 10): ");
 	scanf_s("%d", &numsOfPolynomials);
 
 	while (numsOfPolynomials < 2 || numsOfPolynomials > 10)
 	{
-		printf("Пожалуйста, введите корректные значения, описанные выше: ");
+		printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 		scanf_s("%d", &numsOfPolynomials);
 	}
 
@@ -359,18 +359,18 @@ int thirdTask()
 
 	for (int i = 0; i < numsOfPolynomials; i++)
 	{
-		printf("Введите степень многочлена %d (степень должна быть целая и положительная): ", i + 1);
+		printf_s("Введите степень многочлена %d (степень должна быть целая и положительная): ", i + 1);
 		scanf_s("%d", &polynomials[i].degree);
 		while (polynomials[i].degree < 0)
 		{
-			printf("Пожалуйста, введите корректные значения, описанные выше: ");
+			printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 			scanf_s("%d", &polynomials[i].degree);
 		}
 
-		printf("Введите коэффициенты для многочлена %d: \n", i + 1);
+		printf_s("Введите коэффициенты для многочлена %d: \n", i + 1);
 		for (int j = polynomials[i].degree; j >= 0; j--)
 		{
-			printf("Коэффициент для x степени %d: ", j);
+			printf_s("Коэффициент для x степени %d: ", j);
 			scanf_s("%lf", &polynomials[i].kef[j]);
 			if (i == 0)
 			{
@@ -380,13 +380,13 @@ int thirdTask()
 		quot = subtractingAPolynomial(quot, polynomials[i]);
 	}
 
-	printf("Результат вычитания: ");
+	printf_s("Результат вычитания: ");
 	printPolynomial(quot);
 
-	printf("Введите значение x, чтобы найти разность: ");
+	printf_s("Введите значение x, чтобы найти разность: ");
 	scanf_s("%lf", &x);
 	value = evaluatePolynomials(quot, x);
-	printf("Разность многочленов = %.2lf\n", value);
+	printf_s("Разность многочленов = %.2lf\n", value);
 
 	Sleep(3750);
 	return 0;
@@ -399,12 +399,12 @@ int fourthTask()
 	Polynomial prod = { 0 };
 	double x, value;
 
-	printf("Введите количество многочленов, которые вы хотите перемножить (от 2х до 10): ");
+	printf_s("Введите количество многочленов, которые вы хотите перемножить (от 2х до 10): ");
 	scanf_s("%d", &numsOfPolynomials);
 
 	while (numsOfPolynomials < 2 || numsOfPolynomials > 10)
 	{
-		printf("Пожалуйста, введите корректные значения, описанные выше: ");
+		printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 		scanf_s("%d", &numsOfPolynomials);
 	}
 
@@ -412,18 +412,18 @@ int fourthTask()
 
 	for (int i = 0; i < numsOfPolynomials; i++)
 	{
-		printf("Введите степень многочлена %d (степень должна быть целая и положительная): ", i + 1);
+		printf_s("Введите степень многочлена %d (степень должна быть целая и положительная): ", i + 1);
 		scanf_s("%d", &polynomials[i].degree);
 		while (polynomials[i].degree < 0)
 		{
-			printf("Пожалуйста, введите корректные значения, описанные выше: ");
+			printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 			scanf_s("%d", &polynomials[i].degree);
 		}
 
-		printf("Введите коэффициенты для многочлена %d: \n", i + 1);
+		printf_s("Введите коэффициенты для многочлена %d: \n", i + 1);
 		for (int j = polynomials[i].degree; j >= 0; j--)
 		{
-			printf("Коэффициент для x степени %d: ", j);
+			printf_s("Коэффициент для x степени %d: ", j);
 			scanf_s("%lf", &polynomials[i].kef[j]);
 		}
 		if (i == 0)
@@ -436,13 +436,13 @@ int fourthTask()
 		}
 	}
 
-	printf("Результат умножения: ");
+	printf_s("Результат умножения: ");
 	printPolynomial(prod);
 
-	printf("Введите значение x, чтобы найти произведение многочленов: ");
+	printf_s("Введите значение x, чтобы найти произведение многочленов: ");
 	scanf_s("%lf", &x);
 	value = evaluatePolynomials(prod, x);
-	printf("Произведение многочленов = %.2lf\n", value);
+	printf_s("Произведение многочленов = %.2lf\n", value);
 
 	Sleep(3750);
 	return 0;
@@ -455,31 +455,31 @@ int fifthTask()
 	int degree;
 	double x, value, a;
 
-	printf("Введите максимальную степень значения в многочлене (степень должна быть целая и положительная): ");
+	printf_s("Введите максимальную степень значения в многочлене (степень должна быть целая и положительная): ");
 	scanf_s("%d", &degree);
 	while (degree < 0)
 	{
-		printf("Пожалуйста, введите корректные значения, описанные выше: ");
+		printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 		scanf_s("%d", &degree);
 	}
 	plnmial1.degree = degree;
-	printf("Введите коэффициенты для многочлена:\n");
+	printf_s("Введите коэффициенты для многочлена:\n");
 	for (int i = degree; i >= 0; i--) {
-		printf("Коэффициент для x степени %d: ", i);
+		printf_s("Коэффициент для x степени %d: ", i);
 		scanf_s("%lf", &plnmial1.kef[i]);
 	}
-	printf("Введите значение a, на которое хотите умножить многочлен: ");
+	printf_s("Введите значение a, на которое хотите умножить многочлен: ");
 	scanf_s("%lf", &a);
 
 	result = multiplyingByANumber(plnmial1, a);
 
-	printf("Результат умножения: ");
+	printf_s("Результат умножения: ");
 	printPolynomial(result);
 
-	printf("Введите значение x, чтобы найти произведение многочлена на число: ");
+	printf_s("Введите значение x, чтобы найти произведение многочлена на число: ");
 	scanf_s("%lf", &x);
 	value = evaluatePolynomials(result, x);
-	printf("Произведение многочлена на число = %.2lf\n", value);
+	printf_s("Произведение многочлена на число = %.2lf\n", value);
 
 	Sleep(3750);
 	return 0;
@@ -492,29 +492,29 @@ int sixthTask()
 	int degree;
 	double x, value;
 
-	printf("Введите максимальную степень значения в многочлене (степень должна быть целая и положительная): ");
+	printf_s("Введите максимальную степень значения в многочлене (степень должна быть целая и положительная): ");
 	scanf_s("%d", &degree);
 	while (degree < 0)
 	{
-		printf("Пожалуйста, введите корректные значения, описанные выше: ");
+		printf_s("Пожалуйста, введите корректные значения, описанные выше: ");
 		scanf_s("%d", &degree);
 	}
 	plnmial1.degree = degree;
-	printf("Введите коэффициенты для многочлена:\n");
+	printf_s("Введите коэффициенты для многочлена:\n");
 	for (int i = degree; i >= 0; i--) {
-		printf("Коэффициент для x степени %d: ", i);
+		printf_s("Коэффициент для x степени %d: ", i);
 		scanf_s("%lf", &plnmial1.kef[i]);
 	}
 
 	result = derivativeOfAPolynomial(plnmial1);
 
-	printf("Результат производной от многочлена: ");
+	printf_s("Результат производной от многочлена: ");
 	printPolynomial(result);
 
-	printf("Введите значение x, чтобы найти производную многочлена: ");
+	printf_s("Введите значение x, чтобы найти производную многочлена: ");
 	scanf_s("%lf", &x);
 	value = evaluatePolynomials(result, x);
-	printf("Производная многочлена = %.2lf\n", value);
+	printf_s("Производная многочлена = %.2lf\n", value);
 
 	Sleep(3750);
 	return 0;

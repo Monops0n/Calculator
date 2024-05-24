@@ -1,8 +1,10 @@
 #include "Header.h"
-
+#include <Windows.h>
+#define _CRT_SECURE_NO_WARNINGS
 void main()
 {
-    setlocale(LC_ALL, "ru");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
     int zadanie;
     do
     {

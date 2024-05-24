@@ -5,6 +5,22 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calculatorrr", "Calculatorrr\Calculatorrr.vcxproj", "{C38B3B10-BCCA-4265-A9B9-53ECEB482F79}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{4F9D75BC-75CB-4D1F-B524-2C07016A1EA8}"
+	ProjectSection(SolutionItems) = preProject
+		drobi\drobi.cpp = drobi\drobi.cpp
+		The MatriX\func.h = The MatriX\func.h
+		Functions.cpp = Functions.cpp
+		Functions.h = Functions.h
+		drobi\Header.drobi.cpp = drobi\Header.drobi.cpp
+		drobi\Header.drobi.h = drobi\Header.drobi.h
+		pract2\main.cpp = pract2\main.cpp
+		MainFunctions.cpp = MainFunctions.cpp
+		The MatriX\menu.cpp = The MatriX\menu.cpp
+		pract2\Polynomials.cpp = pract2\Polynomials.cpp
+		pract2\Polynomials.h = pract2\Polynomials.h
+		The MatriX\tasks.cpp = The MatriX\tasks.cpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

@@ -133,6 +133,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\drobi\drobi.cpp" />
+    <ClCompile Include="..\drobi\Header.drobi.cpp" />
+    <ClCompile Include="..\Functions.cpp" />
+    <ClCompile Include="..\MainFunctions.cpp" />
+    <ClCompile Include="..\pract2\main.cpp" />
+    <ClCompile Include="..\pract2\Polynomials.cpp" />
+    <ClCompile Include="..\The MatriX\menu.cpp" />
+    <ClCompile Include="..\The MatriX\tasks.cpp" />
     <ClCompile Include="komba.cpp" />
     <ClCompile Include="kombamain.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -140,6 +148,10 @@
     <ClCompile Include="tervermain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\drobi\Header.drobi.h" />
+    <ClInclude Include="..\Functions.h" />
+    <ClInclude Include="..\pract2\Polynomials.h" />
+    <ClInclude Include="..\The MatriX\func.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="komba.h" />
     <ClInclude Include="terver.h" />

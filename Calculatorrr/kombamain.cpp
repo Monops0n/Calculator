@@ -2,7 +2,6 @@
 
 void main_KOMBA()
 {
-    setlocale(LC_ALL, "ru");
     int zadanie;
     do
     {

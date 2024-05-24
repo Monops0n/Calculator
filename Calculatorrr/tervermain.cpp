@@ -2,7 +2,6 @@
 
 void mainterver()
 {
-    setlocale(LC_ALL, "ru");
     int zadanie;
     do
     {
